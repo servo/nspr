@@ -29,6 +29,7 @@ endif
 DIST_GARBAGE = config.cache config.log config.status
 
 all:: config.status export
+	touch libnspr.dummy
 
 include $(topsrcdir)/config/rules.mk
 
